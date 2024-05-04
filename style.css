@@ -188,15 +188,25 @@ nav ul li a:hover {
     color: var(--white);
 }
 
-span.blue-bg-shape {
+/* span.blue-bg-shape {
     background: var(--soft-blue);
     display: block;
     border-radius: 30% 0rem 0rem 35%;
     position: absolute;
     right: 0%;
     z-index: -1;
+} */
+.hero-image:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 30vw;
+    height: 50vh;
+    border-radius: 50% 0 0 50%;
+    background: var(--soft-blue);
+    z-index: -1;
 }
-
 .features-container {
     display: flex;
     justify-content: center;
@@ -250,13 +260,24 @@ hr.horizontal-line {
 
 }
 
-.tab-left-col span.blue-bg-tab-shape {
+/* .tab-left-col span.blue-bg-tab-shape {
     background: var(--soft-blue);
     border-radius: 0rem 50% 50% 0rem;
     display: block;
     z-index: -1;
     position: absolute;
     left: 0;
+} */
+.tab-left-col:after {
+    content: '';
+    position: absolute;
+    top: 200%;
+    left: 0;
+    width: 30vw;
+    height: 50vh;
+    border-radius: 0% 50% 50% 0;
+    background: var(--soft-blue);
+    z-index: -1;
 }
 
 .tab-left-col img {
@@ -537,17 +558,17 @@ form {
 
 @media only screen and (min-width:1367px) {
 
-    span.blue-bg-shape {
+    /* span.blue-bg-shape {
         height: 40rem;
         width: 60rem;
         top: 35%;
-    }
+    } */
 
-    .tab-left-col span.blue-bg-tab-shape {
+    /* .tab-left-col span.blue-bg-tab-shape {
         height: 40rem;
         width: 60rem;
         bottom: -85%;
-    }
+    } */
 }
 
 @media only screen and (min-width:1280px) and (max-width:1366px) {
@@ -571,6 +592,28 @@ form {
 
 @media only screen and (max-width:767px) {
 
+    .hero-image:after {
+        content: '';
+        position: absolute;
+        top: 64%;
+        right: 0;
+        width: 50vw;
+        height: 22vh;
+        border-radius: 50% 0 0 50%;
+        background: var(--soft-blue);
+        z-index: -1;
+    }
+    .tab-left-col:after {
+        content: '';
+        position: absolute;
+        top: 155%;
+        left: 0;
+        width: 50vw;
+        height: 22vh;
+        border-radius: 0% 50% 50% 0;
+        background: var(--soft-blue);
+        z-index: -1;
+    }
     .top-header {
         flex-direction: row;
         padding: 3rem;
@@ -596,11 +639,11 @@ form {
         width: 100%;
     }
 
-    span.blue-bg-shape {
+    /* span.blue-bg-shape {
         height: 20rem;
         width: 30rem;
         top: 65%;
-    }
+    } */
 
     .features-container p {
         width: 100%;
@@ -621,11 +664,11 @@ form {
         flex-direction: column;
     }
 
-    .tab-left-col span.blue-bg-tab-shape {
+    /* .tab-left-col span.blue-bg-tab-shape {
         height: 20rem;
         width: 30rem;
         bottom: -68%;
-    }
+    } */
 
     .ui-tabs-nav li {
         width: 100%;
