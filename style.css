@@ -199,7 +199,7 @@ nav ul li a:hover {
 .hero-image:after {
     content: '';
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: 0;
     width: 30vw;
     height: 50vh;
@@ -271,7 +271,7 @@ hr.horizontal-line {
 .tab-left-col:after {
     content: '';
     position: absolute;
-    top: 200%;
+    top: 145%;
     left: 0;
     width: 30vw;
     height: 50vh;
